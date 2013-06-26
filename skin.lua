@@ -911,7 +911,8 @@ end
 	- desc: draws the text object
 --]]---------------------------------------------------------
 function skin.DrawText(object)
-	if object.defaultcolor[1] == 0 and object.defaultcolor[2] == 0 and object.defaultcolor[3] == 0 and object.defaultcolor[4] == 255 then -- temp. workaround
+	local c = object.defaultcolor
+	if c[1] == 0 and c[2] == 0 and c[3] == 0 and c[4] == 255 then -- workaround
 		object.defaultcolor = skin.controls.frame_name_color
 		object:SetText(object:GetText())
 	end
