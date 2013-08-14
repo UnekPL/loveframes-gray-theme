@@ -9,7 +9,7 @@
 local skin = {}
 
 -- skin info (you always need this in a skin)
-skin.name = "gray"
+skin.name = "Gray"
 skin.author = "UnekPL"
 skin.version = "v4"
 
