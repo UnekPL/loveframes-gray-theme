@@ -5,6 +5,9 @@
 
 -- made for loveframes 0.9.5.12
 
+local path = string.sub(..., 1, string.len(...) - string.len(".skins.Gray.skin"))
+local loveframes = require(path .. ".libraries.common")
+
 -- skin table
 local skin = {}
 
